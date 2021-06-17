@@ -11,7 +11,8 @@ import SwiftUI
 struct JSONDataPracticeApp: App {
     var body: some Scene {
         WindowGroup {
-            DownloadWithEscaping()
+//            DownloadWithEscaping()
+            DownloadWithCombine()
         }
     }
 }
