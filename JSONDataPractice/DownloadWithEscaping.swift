@@ -15,7 +15,7 @@ class DownloadWithEscapingViewModel : ObservableObject {
     
     func getPosts() {
         
-        guard let url = URL(string: "") else {return}
+        guard let url = URL(string: "https://jsonplaceholder.typicode.com/posts/1") else {return}
         URLSession.shared.dataTask(with: url) { data , response , error  in
             guard let data = data else {
                 print("No Data")
@@ -47,7 +47,7 @@ class DownloadWithEscapingViewModel : ObservableObject {
     }
 }
 
-struct DownloadWithEscapting: View {
+struct DownloadWithEscaping: View {
     
     @StateObject var vm = DownloadWithEscapingViewModel()
     
@@ -58,6 +58,6 @@ struct DownloadWithEscapting: View {
 
 struct DownloadWithEscapting_Previews: PreviewProvider {
     static var previews: some View {
-        DownloadWithEscapting()
+        DownloadWithEscaping()
     }
 }
