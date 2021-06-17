@@ -11,6 +11,7 @@
 		E37A6CAF267BE955007CA600 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37A6CAE267BE955007CA600 /* ContentView.swift */; };
 		E37A6CB1267BE956007CA600 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E37A6CB0267BE956007CA600 /* Assets.xcassets */; };
 		E37A6CB4267BE956007CA600 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E37A6CB3267BE956007CA600 /* Preview Assets.xcassets */; };
+		E37A6CBC267BEAD1007CA600 /* DownloadWithEscaping.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37A6CBB267BEAD1007CA600 /* DownloadWithEscaping.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		E37A6CB0267BE956007CA600 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E37A6CB3267BE956007CA600 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E37A6CB5267BE956007CA600 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E37A6CBB267BEAD1007CA600 /* DownloadWithEscaping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadWithEscaping.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				E37A6CB0267BE956007CA600 /* Assets.xcassets */,
 				E37A6CB5267BE956007CA600 /* Info.plist */,
 				E37A6CB2267BE956007CA600 /* Preview Content */,
+				E37A6CBB267BEAD1007CA600 /* DownloadWithEscaping.swift */,
 			);
 			path = JSONDataPractice;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E37A6CBC267BEAD1007CA600 /* DownloadWithEscaping.swift in Sources */,
 				E37A6CAF267BE955007CA600 /* ContentView.swift in Sources */,
 				E37A6CAD267BE955007CA600 /* JSONDataPracticeApp.swift in Sources */,
 			);
