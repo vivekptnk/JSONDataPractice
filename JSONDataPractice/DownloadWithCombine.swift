@@ -44,24 +44,27 @@ class DownloadWithCombineViewModel : ObservableObject {
         // 7. store : cancel subscription
         */
         URLSession.shared.dataTaskPublisher(for: url)
-            .subscribe(on: DispatchQueue.global(qos: .background)) // by default task publisher is in background the .subscribe is for the sake of it
+//            .subscribe(on: DispatchQueue.global(qos: .background)) // by default task publisher is in background the .subscribe is for the sake of it
             .receive(on: DispatchQueue.main)
-            .tryMap { (data, response) -> Data in
-                guard let response = response as? HTTPURLResponse,
-                      response.statusCode >= 200 && response.statusCode < 300 else {
-                    throw URLError(.badServerResponse)
-                }
-                return data
-            }
+
+            .tryMap(handleOutput)
             .decode(type: [PostModel].self, decoder: JSONDecoder())
             .sink { (completion) in
-                print("completion : \(completion)")
+//                print("completion : \(completion)")
             } receiveValue: { [weak self] (returnedPosts) in
                 self?.posts = returnedPosts
             }
             .store(in: &cancellables)
 
         
+    }
+    
+    func handleOutput(output: URLSession.DataTaskPublisher.Output) throws -> Data {
+        guard let response = output.response as? HTTPURLResponse,
+              response.statusCode >= 200 && response.statusCode < 300 else {
+            throw URLError(.badServerResponse)
+        }
+        return output.data
     }
 }
 
