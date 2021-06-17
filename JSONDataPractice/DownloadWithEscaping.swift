@@ -10,7 +10,7 @@ import SwiftUI
 class DownloadWithEscapingViewModel : ObservableObject {
     
     init(){
-        
+        getPosts()
     }
     
     func getPosts() {
