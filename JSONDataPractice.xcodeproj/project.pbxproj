@@ -12,6 +12,7 @@
 		E37A6CB4267BE956007CA600 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E37A6CB3267BE956007CA600 /* Preview Assets.xcassets */; };
 		E37A6CBC267BEAD1007CA600 /* DownloadWithEscaping.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37A6CBB267BEAD1007CA600 /* DownloadWithEscaping.swift */; };
 		E37A6CBE267BF43E007CA600 /* DownloadWithCombine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37A6CBD267BF43E007CA600 /* DownloadWithCombine.swift */; };
+		E37A6CC0267C23B0007CA600 /* PublisherSubscriberCombine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37A6CBF267C23B0007CA600 /* PublisherSubscriberCombine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		E37A6CB5267BE956007CA600 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E37A6CBB267BEAD1007CA600 /* DownloadWithEscaping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadWithEscaping.swift; sourceTree = "<group>"; };
 		E37A6CBD267BF43E007CA600 /* DownloadWithCombine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadWithCombine.swift; sourceTree = "<group>"; };
+		E37A6CBF267C23B0007CA600 /* PublisherSubscriberCombine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherSubscriberCombine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				E37A6CB2267BE956007CA600 /* Preview Content */,
 				E37A6CBB267BEAD1007CA600 /* DownloadWithEscaping.swift */,
 				E37A6CBD267BF43E007CA600 /* DownloadWithCombine.swift */,
+				E37A6CBF267C23B0007CA600 /* PublisherSubscriberCombine.swift */,
 			);
 			path = JSONDataPractice;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E37A6CC0267C23B0007CA600 /* PublisherSubscriberCombine.swift in Sources */,
 				E37A6CBC267BEAD1007CA600 /* DownloadWithEscaping.swift in Sources */,
 				E37A6CAD267BE955007CA600 /* JSONDataPracticeApp.swift in Sources */,
 				E37A6CBE267BF43E007CA600 /* DownloadWithCombine.swift in Sources */,

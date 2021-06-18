@@ -12,7 +12,8 @@ struct JSONDataPracticeApp: App {
     var body: some Scene {
         WindowGroup {
 //            DownloadWithEscaping()
-            DownloadWithCombine()
+//            DownloadWithCombine()
+            PublisherSubscriberCombine()
         }
     }
 }
